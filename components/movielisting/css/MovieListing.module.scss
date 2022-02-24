@@ -1,0 +1,9 @@
+@import "../../../styles/color.scss";
+
+
+.MovieList{
+    padding: 50px 5%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+}

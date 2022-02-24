@@ -1,0 +1,39 @@
+.card_item {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #1a242f;
+  border-radius: 8px;
+}
+
+.card_item .card_inner .card_top {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 267px;
+}
+
+.card_item .card_inner .card_top img {
+  width: 180px;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card_item .card_inner .card_bottom {
+  width: 180px;
+  padding: 15px 10px;
+}
+
+.card_item .card_inner .card_bottom .card_info h4 {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.card_item .card_inner .card_bottom .card_info p {
+  font-size: 12px;
+  color: #ffffff;
+}
+/*# sourceMappingURL=MovieCard.module.css.map */
