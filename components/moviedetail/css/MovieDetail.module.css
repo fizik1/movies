@@ -1,1 +1,58 @@
-/* No CSS *//*# sourceMappingURL=MovieDetail.module.css.map */
+.movie {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px;
+}
+
+.movie .texts {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.movie .texts > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 20px 30px;
+}
+
+.movie .texts > div .title, .movie .texts > div .title_text, .movie .texts > div .about, .movie .texts > div .about_text {
+  padding: 10px 20px;
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  background-color: #1a242f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.movie .texts > div .title_text {
+  background-color: #1a242f7a;
+  width: 300px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 30px;
+}
+
+.movie .texts > div .about_text {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 30px;
+  background-color: #1a242f7a;
+  width: 300px;
+}
+/*# sourceMappingURL=MovieDetail.module.css.map */

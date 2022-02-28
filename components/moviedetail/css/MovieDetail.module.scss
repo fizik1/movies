@@ -1,0 +1,40 @@
+@import "../../../styles/color.scss";
+
+
+.movie{
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    padding: 50px;
+    .texts{
+        width: fit-content;
+        > div{
+            display: flex;
+            margin: 0 0 20px 30px;
+            .title, .title_text, .about, .about_text {
+                padding: 10px 20px;
+                width: 100px;
+                height: 30px;
+                color: #fff;
+                background-color: $secondary-color;
+                display: flex;
+                align-items: center;
+                font-size: 13px;
+                line-height: 20px;
+            }
+            .title_text{
+                background-color: #1a242f7a;
+                width: 300px;
+                height: fit-content;
+                min-height: 30px;
+            }
+            .about_text{
+                height: fit-content;
+                min-height: 30px;
+                background-color: #1a242f7a;
+                width: 300px;
+            }
+            
+        }
+    }
+}

@@ -7,18 +7,25 @@ import css from './css/MovieListing.module.css'
 
 const MovieListing = () => {
     const movies = useSelector(getAllMovies)
-    console.log(movies);
-    let renderMovie = ""
-    renderMovie = movies.Response == "True" ? (
-        movies.Search.map((movie, index) => (
-            <MovieCard key={index} data={movie} />
-        ))
-    ) : (
-        <div className='error_movie'>{movies.Error}</div>
-    )
+    
+    const renderMovie = ()=>{
+        if(movies.data){
+            if(movies.data.items){
+                return movies.data.items.map((movie, index) => (
+                    <MovieCard key={index} data={movie} />
+                ))
+            }
+            if(movies.data.results){
+                return movies.data.results.map((movie, index) => (
+                    <MovieCard key={index} data={movie} />
+                ))
+            }
+        }else (<div className='error_movie'></div>)
+    }
+
     return (
         <div className={css.MovieList}>
-            {renderMovie}
+            {renderMovie()}
         </div>
     );
 };
